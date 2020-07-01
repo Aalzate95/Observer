@@ -12,12 +12,15 @@ public class Editor {
     }
     public void ARojo(Button color, Pane root) {
         events.notify("clickRojo",color,root);
+        
     }
     public void AAmarillo(Button color, Pane root) {
         events.notify("clickAmarillo",color,root);
+        
     }
     public void AAzul(Button color, Pane root) {
         events.notify("clickAzul",color,root);
+        
     }
 
 }

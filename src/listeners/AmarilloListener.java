@@ -11,7 +11,7 @@ public class AmarilloListener implements EventListener {
 	@Override
 	public void update(String eventType, Button btn, Pane root) {
 		
-		btn.setOnAction(e -> root.setStyle("-fx-background-color: Yellow"));
+		btn.setOnAction(e -> {root.setStyle("-fx-background-color: Yellow");System.out.println("Amarillo");});
 
 	}
 }

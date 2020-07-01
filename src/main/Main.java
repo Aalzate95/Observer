@@ -25,13 +25,14 @@ public class Main extends Application {
 		Button btnAmarillo = new Button("Amarillo");
 		Button btnAzul = new Button("Azul");
 		
-        editor.ARojo(btnRojo,root);
-        editor.events.subscribe("clickRojo", new RojoListener());
-        editor.AAmarillo(btnAmarillo,root);
-        editor.events.subscribe("clickAmarillo", new AmarilloListener());
-        editor.AAzul(btnAzul,root);
-        editor.events.subscribe("clickAzul", new AzulListener());
+		editor.events.subscribe("clickRojo", new RojoListener());
+		editor.events.subscribe("clickAmarillo", new AmarilloListener());
+		editor.events.subscribe("clickAzul", new AzulListener());
 		
+        editor.ARojo(btnRojo,root);  
+        editor.AAmarillo(btnAmarillo,root);
+        editor.AAzul(btnAzul,root);
+	        
 		root.getChildren().addAll(btnRojo,btnAmarillo,btnAzul);
 		root.setAlignment(Pos.CENTER);
 		Scene scene = new Scene(root, 360,360);

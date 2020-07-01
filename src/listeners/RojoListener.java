@@ -11,7 +11,7 @@ public class RojoListener implements EventListener {
 	@Override
 	public void update(String eventType, Button btn, Pane root) {
 		
-		btn.setOnAction(e -> root.setStyle("-fx-background-color: Red"));
-
+		btn.setOnAction(e -> {root.setStyle("-fx-background-color: Red");System.out.println("Rojo");});
+		
 	}
 }

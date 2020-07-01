@@ -11,7 +11,7 @@ public class AzulListener implements EventListener {
 	@Override
 	public void update(String eventType, Button btn, Pane root) {
 		
-		btn.setOnAction(e -> root.setStyle("-fx-background-color: Blue"));
+		btn.setOnAction(e -> {root.setStyle("-fx-background-color: Blue");System.out.println("Azul");});
 
 	}
 }
